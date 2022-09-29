@@ -1,0 +1,155 @@
+*, *:after, *:before {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    background: #f6f6f6;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    margin: 0;
+    padding: 0;
+}
+.white {
+    background: white;
+}
+
+.shadow_1 {
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+.shadow_2 {
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.13), 0px 1px 4px 0px rgba(0, 0, 0, 0.16), 0px 1px 6px 0px rgba(0, 0, 0, 0.26);
+}
+
+#head {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 56px;
+    line-height: 56px;
+    margin-bottom: 12px;
+    background: #494342;
+}
+.regBox {
+    max-width: 1000px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+#head .logo {
+    width: 136px;
+    padding: 0 30px;
+    color: #fff;
+    font-weight: bold;
+    height: 56px;
+    background: #494342;
+    text-align: center;
+    cursor: pointer;
+}
+
+#s-body {
+    margin-top: 70px;
+}
+
+#left {
+    display: inline-block;
+    width: 15%;
+    float: left;
+}
+#content {
+    display: inline-block;
+    width: 60%;
+    float: left;
+}
+#right {
+    display: inline-block;
+    width:25%;
+    float: right;
+}
+
+.clearb {
+    clear: both;
+}
+
+#footer {
+    height: 36px;
+    margin-top: 12px;
+    line-height: 36px;
+    text-align: center;
+    background: #494342;
+    color: #fff;
+}
+
+@media screen and (max-width: 750px){
+    #left {
+        width: 30%;
+    }
+    #content {
+        width: 70%;
+    }
+    #right {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 380px){
+    #left {
+        display: block;
+        width: 100%;
+    }
+    #content {
+        display: block;
+        width: 100%;
+    }
+}
+
+.content {
+    margin: 3px;
+    padding: 10px;
+}
+.nav_head {
+    display: flex;
+    height: 56px;
+    align-items: center;
+    color: #d0d0d0;
+}
+
+.nav_ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.nav_ul > li {
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.nav_ul > li:hover {
+    color: white;
+    background: #494342;
+}
+.nav_right {
+    flex-grow: 1;
+    text-align: right;
+    padding: 0 20px;
+}
+.btn_login {
+    padding: 0 20px;
+    cursor: pointer;
+    display: inline-block;
+}
+.btn_login:hover {
+    color: white;
+    background: #494342;
+}
+
+.ads {
+    text-align: center;
+    padding: 30px;
+    margin-bottom: 10px;
+    border: 1px solid #e9e9e9;
+}
